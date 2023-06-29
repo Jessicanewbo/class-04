@@ -1,25 +1,28 @@
-"use strict"; 
+"use strict";
 
-console.log ('hello!!');
+console.log('hello!!');
 
-let allergic;
+let allergicResponse = function () {
 
-allergic = prompt('Are you allergic to flowers?');
-
-console.log(allergic);
-if(allergic ==='yes'){
-    alert('stay away from us');
-    confirm('you are allergic to flowers?');
-
-} else if(allergic ==='no') { 
-    alert('good for you');
-}
+    let allergic = prompt('Are you allergic to flowers?');
 
 
+    if (allergic === 'yes') {
+        alert('stay away from us');
+        confirm('you are allergic to flowers?');
 
-else{ 
-    alert('FIGURE IT OUT')
-}
+    } else if (allergic === 'no') {
+        alert('good for you');
+    } else {
+        alert('FIGURE IT OUT')
+    }
+    return document.write('have a nice day'); 
+} //closes function 
+
+
+
+
+
 
 
 
